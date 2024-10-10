@@ -4,6 +4,10 @@
 
 - Create a DataFrame with the scaled data and set the "coin_id" index from the original DataFrame as the index for the new DataFrame.
 
+- Display the initial graph.
+
+![initial_graph.png](https://github.com/tgrishanina/CryptoClustering/blob/main/Images/initial_graph.png)
+
 ## Find the Best Value for k Using the Scaled DataFrame
 
 - Use the elbow method to find the best value for k using the following steps:
@@ -13,6 +17,8 @@ Create a for loop to compute the inertia with each possible value of k.
 Create a dictionary with the data to plot the elbow curve.
 Plot a line chart with all the inertia values computed with the different values of k to visually identify the optimal value for k.
 - Answer the following question in your notebook: What is the best value for k?
+
+![1st_elbow_curve.png](https://github.com/tgrishanina/CryptoClustering/blob/main/Images/1st_elbow_curve.png)
 
 ## Cluster Cryptocurrencies with K-means Using the Scaled DataFrame
 
@@ -25,6 +31,8 @@ Create a copy of the scaled DataFrame and add a new column with the predicted cl
 Set the x-axis as "price_change_percentage_24h" and the y-axis as "price_change_percentage_7d".
 Color the graph points with the labels found using K-means.
 Add the "coin_id" column in the hover_cols parameter to identify the cryptocurrency represented by each data point.
+
+![kmeans_cluster.png](https://github.com/tgrishanina/CryptoClustering/blob/main/Images/kmeans_cluster.png)
 
 ## Optimize Clusters with Principal Component Analysis
 
@@ -48,6 +56,8 @@ Create a dictionary with the data to plot the Elbow curve.
 What is the best value for k when using the scaled PCA DataFrame?
 Does it differ from the best k value found using the original scaled DataFrame?
 
+![2nd_elbow_curve.png](https://github.com/tgrishanina/CryptoClustering/blob/main/Images/2nd_elbow_curve.png)
+
 ## Cluster Cryptocurrencies with K-means Using the PCA DataFrame
 
 - Use the following steps to cluster the cryptocurrencies for the best value for k on the PCA DataFrame:
@@ -62,3 +72,7 @@ Create a copy of the scaled PCA DataFrame and add a new column to store the pred
 - Add the "coin_id" column in the hover_cols parameter to identify the cryptocurrency represented by each data point.
 - Answer the following question:
 What is the impact of using fewer features to cluster the data using K-Means?
+
+![pca_cluster.png](https://github.com/tgrishanina/CryptoClustering/blob/main/Images/pca_cluster.png)
+
+![comparison.png](https://github.com/tgrishanina/CryptoClustering/blob/main/Images/comparison.png)
