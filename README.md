@@ -75,6 +75,8 @@ Create a copy of the scaled PCA DataFrame and add a new column to store the pred
 - Answer the following question:
 What is the impact of using fewer features to cluster the data using K-Means?
 
+Using fewer features does not seem to affect the elbow curve, so the number of clusters (4) remained the same. However, the PCA method made the clusters more distinct and easier to identify.
+
 
 ![composite_elbows.png](https://github.com/tgrishanina/CryptoClustering/blob/main/Images/composite_elbows.png)
 
