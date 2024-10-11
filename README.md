@@ -70,9 +70,13 @@ Create a copy of the scaled PCA DataFrame and add a new column to store the pred
 - Set the x-axis as "PC1" and the y-axis as "PC2".
 - Color the graph points with the labels found using K-means.
 - Add the "coin_id" column in the hover_cols parameter to identify the cryptocurrency represented by each data point.
+![pca_cluster.png](https://github.com/tgrishanina/CryptoClustering/blob/main/Images/pca_cluster.png)
+
 - Answer the following question:
 What is the impact of using fewer features to cluster the data using K-Means?
 
-![pca_cluster.png](https://github.com/tgrishanina/CryptoClustering/blob/main/Images/pca_cluster.png)
 
-![comparison.png](https://github.com/tgrishanina/CryptoClustering/blob/main/Images/comparison.png)
+![composite_elbows.png](https://github.com/tgrishanina/CryptoClustering/blob/main/Images/composite_elbows.png)
+
+![composite_clusters.png](https://github.com/tgrishanina/CryptoClustering/blob/main/Images/composite_clusters.png)
+
